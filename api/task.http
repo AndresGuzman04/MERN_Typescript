@@ -1,0 +1,21 @@
+@url = http://localhost:3000
+
+### 
+GET {{url}}/tasks
+
+###
+GET {{url}}/tasks/1
+
+### create a task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+{
+    "title": "Task 1",
+    "description": "This is a task"
+}
+
+###
+DELETE {{url}}/tasks/1
+
+###
+PUT {{url}}/tasks/1
