@@ -35,6 +35,11 @@ export const deleteTask: RequestHandler = async (req, res) => {
     }
 } 
 
-export const updateTask: RequestHandler = (req, res) => {
-    res.json('getting task')
+export const updateTask: RequestHandler = async (req, res) => {
+    try {
+        const taskUpdated = await Task.findByIdAndUpdate(req.params.id, req.body,{new: true})
+        res.json(taskUpdated)
+    } catch (error) {
+        res.status(204).json();
+    }
 } 
