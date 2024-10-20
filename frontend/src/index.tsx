@@ -2,13 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import TaskList from './components/Tasks/TaskList';
+import TaskForm from './components/Tasks/TaskForm';
+
+import 'bootswatch/dist/pulse/bootstrap.min.css'
+import './index.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <h1>Hello word</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TaskList />} />
+        <Route path="/new-video" element={<TaskForm />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
