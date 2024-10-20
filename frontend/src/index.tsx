@@ -10,7 +10,6 @@ import Navbar from './components/Navbar/Navbar';
 import 'bootswatch/dist/lux/bootstrap.css'
 import './index.css';
 
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -21,10 +20,10 @@ root.render(
 
     <Navbar/>
 
-    <div className="container">
+    <div className="container p-4">
       <Routes>
         <Route path="/" element={<TaskList />} />
-        <Route path="/new-video" element={<TaskForm />} />
+        <Route path="/new-task" element={<TaskForm />} />
       </Routes>
     </div>
       
