@@ -5,9 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TaskList from './components/Tasks/TaskList';
 import TaskForm from './components/Tasks/TaskForm';
+import Navbar from './components/Navbar/Navbar';
 
-import 'bootswatch/dist/pulse/bootstrap.min.css'
+import 'bootswatch/dist/lux/bootstrap.css'
 import './index.css';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,10 +18,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+
+    <Navbar/>
+
+    <div className="container">
       <Routes>
         <Route path="/" element={<TaskList />} />
         <Route path="/new-video" element={<TaskForm />} />
       </Routes>
+    </div>
+      
     </BrowserRouter>
   </React.StrictMode>
 );
