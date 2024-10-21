@@ -30,7 +30,6 @@ cd MERN_Typescript
 
 cd api
 
-Remove-Item -Recurse -Force node_modules
 npm install
 
 # Instala dependencias para el frontend
