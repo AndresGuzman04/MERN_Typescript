@@ -87,9 +87,9 @@ const TaskForm = () => {
               <div className="mb-3">
                 {
                   params.id ?(
-                  <button className="btn btn-primary">Update Task</button>
+                  <button className="btn btn-primary" disabled={!task.title || !task.description} >Update Task</button>
                 ): (
-                  <button className="btn btn-primary">Create Task</button>
+                  <button className="btn btn-primary" disabled={!task.title || !task.description} >Create Task</button>
                 )}
               </div>
 
