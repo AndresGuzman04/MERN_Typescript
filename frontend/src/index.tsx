@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TaskList from './components/Tasks/TaskList';
 import TaskForm from './components/Tasks/TaskForm';
 import Navbar from './components/Navbar/Navbar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import 'bootswatch/dist/lux/bootstrap.css'
 import './index.css';
@@ -24,7 +26,9 @@ root.render(
       <Routes>
         <Route path="/" element={<TaskList />} />
         <Route path="/new-task" element={<TaskForm />} />
+        <Route path="/update/:id" element={<TaskForm />} />
       </Routes>
+      <ToastContainer />
     </div>
       
     </BrowserRouter>
