@@ -1,7 +1,7 @@
 # Nombre del Proyecto
 
 MERN_Typescript - CRUD TASK
-
+Este es un proyecto que utiliza el stack MERN (MongoDB, Express, React, Node.js) y TypeScript para la gestión de tareas. Permite crear, actualizar y eliminar tareas de manera sencilla.
 
 ## Tecnologías Usadas
 
@@ -16,6 +16,7 @@ MERN_Typescript - CRUD TASK
 
 ## Instalación
 
+Deberás tener MongoDB instalado y corriendo en tu máquina
 ```bash
 # Clona el repositorio
 git clone https://github.com/AndresGuzman04/MERN_Typescript.git
