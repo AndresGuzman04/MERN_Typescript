@@ -11,6 +11,7 @@ MERN_Typescript - CRUD TASK
   - Express
   - MongoDB
   - TypeScript
+  - Bootswatch/Bootstrap
   - Otras bibliotecas relevantes
 
 ## Instalación
